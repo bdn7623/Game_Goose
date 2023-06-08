@@ -1,0 +1,6 @@
+    if ball_rect.bottom >= heigth or ball_rect.top <= 0:
+        ball_speed[1] = -ball_speed[1]
+        ball.fill(YELLOW)
+    if ball_rect.left <= 0 or ball_rect.right >= 800:
+        ball_speed[0] = -ball_speed[0]
+        ball.fill(WHITE)
